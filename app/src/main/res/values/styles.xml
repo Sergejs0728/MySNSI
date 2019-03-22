@@ -1,0 +1,220 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <!--Home toolbar -->
+    <style name="tool_bar_home_left_text_style">
+        <item name="font">@string/font_applied</item>
+        <item name="textStyle">@integer/REGULAR</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="tool_bar_home_title_style">
+
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+    <!--Logbook toolbar -->
+    <style name="tool_bar_logbook_left_back_text_style">
+        <item name="font">@string/font_applied</item>
+        <item name="textStyle">@integer/REGULAR</item>
+        <item name="android:textColor">@color/logbook_toolbar_back_text_color</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="logbook_next_button_style">
+        <item name="font">@string/font_applied</item>
+        <item name="textStyle">@integer/REGULAR</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">56dp</item>
+        <item name="android:paddingRight">56dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="logbook_section_header_style">
+        <item name="font">@string/font_applied</item>
+        <item name="textStyle">@integer/REGULAR</item>
+        <item name="android:textColor">@color/logbook_section_header_color</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textSize">14sp</item>
+
+    </style>
+
+    <style name="logbook_edit_text_style">
+        <item name="font">@string/font_applied</item>
+        <item name="textStyle">@integer/REGULAR</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/logbook_section_header_color</item>
+        <item name="android:paddingLeft">32dp</item>
+        <item name="android:paddingRight">32dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--LogBack :Dive site name -->
+    <style name="logbook_dive_site_edit_text_style">
+        <item name="font">@string/font_applied</item>
+        <item name="textStyle">@integer/REGULAR</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/logbook_section_header_color</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+
+    <!-- Log back -->
+    <style name="logbook_adapter_item_dive_name">
+        <item name="font">@string/font_applied</item>
+        <item name="textStyle">@integer/BOLD</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="logbook_adapter_item_header">
+        <item name="font">@string/font_applied</item>
+        <item name="textStyle">@integer/REGULAR</item>
+        <item name="android:textColor">@color/logbook_section_header_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">@dimen/logbook_list_item_drawable_padding</item>
+
+
+    </style>
+
+    <style name="logbook_adapter_item_values">
+        <item name="font">@string/font_applied</item>
+        <item name="textStyle">@integer/BOLD</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+
+    </style>
+
+    <style name="logbook_adapter_item_swipe_options">
+        <item name="font">@string/font_applied</item>
+        <item name="textStyle">@integer/REGULAR</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+
+    </style>
+
+    <!--Check list item text-->
+    <style name="check_list_item_text_style">
+        <item name="font">@string/font_applied</item>
+        <item name="textStyle">@integer/BOLD</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">8dp</item>
+    </style>
+
+    <style name="checklist_adapter_item_swipe_options">
+        <item name="font">@string/font_applied</item>
+        <item name="textStyle">@integer/REGULAR</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">8dp</item>
+
+
+    </style>
+    <!--LogBack :Dive site name -->
+    <style name="check_list_add_new_item_alert_box">
+        <item name="font">@string/font_applied</item>
+        <item name="textStyle">@integer/REGULAR</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/logbook_section_header_color</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--LogBack :Dive site name -->
+    <style name="photo_picker_header_text">
+        <item name="font">@string/font_applied</item>
+        <item name="textStyle">@integer/BOLD</item>
+        <item name="android:textColor">@color/logbook_section_header_color</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingTop">@dimen/bottom_sheet_items_padding_top</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="photo_picker_header_sub_text">
+        <item name="font">@string/font_applied</item>
+        <item name="textStyle">@integer/REGULAR</item>
+        <item name="android:textColor">@color/logbook_section_header_color</item>
+        <item name="android:paddingBottom">@dimen/bottom_sheet_items_padding_bottom</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="photo_picker_content_text">
+        <item name="font">@string/font_applied</item>
+        <item name="textStyle">@integer/BOLD</item>
+        <item name="android:textColor">@color/logbook_toolbar_back_text_color</item>
+        <item name="android:paddingBottom">@dimen/bottom_sheet_items_padding_bottom</item>
+        <item name="android:paddingTop">@dimen/bottom_sheet_items_padding_top</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="logbook_detail_title_style">
+        <item name="font">@string/font_applied</item>
+        <item name="textStyle">@integer/BOLD</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="logbook_detail_item_style">
+        <item name="font">@string/font_applied</item>
+        <item name="textStyle">@integer/REGULAR</item>
+        <item name="android:textColor">@color/logbook_section_header_color</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:gravity">center_vertical</item>
+
+    </style>
+    <!-- Sheet dialog-->
+    <style name="ios_image_picker" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+</resources>

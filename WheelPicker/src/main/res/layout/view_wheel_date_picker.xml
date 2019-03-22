@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:aigestudio="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    >
+
+    <com.aigestudio.wheelpicker.widgets.WheelDayPicker
+        android:id="@+id/wheel_date_picker_day"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_weight=".7"
+        aigestudio:wheel_item_text_size="@dimen/wheel_text_size"/>
+
+    <com.aigestudio.wheelpicker.widgets.WheelMonthPicker
+        android:id="@+id/wheel_date_picker_month"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_weight="1.3"
+        aigestudio:wheel_item_text_size="@dimen/wheel_text_size"/>
+
+
+    <com.aigestudio.wheelpicker.widgets.WheelYearPicker
+        android:id="@+id/wheel_date_picker_year"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_weight=".7"
+        aigestudio:wheel_item_text_size="@dimen/wheel_text_size"
+        />
+
+</LinearLayout>

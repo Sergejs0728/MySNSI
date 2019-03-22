@@ -1,0 +1,25 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <shiva.joshi.common.customs.CustomTextView
+        android:id="@+id/logback_item_name"
+        style="@style/logbook_detail_item_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="4dp"
+
+        />
+
+    <shiva.joshi.common.customs.CustomTextView
+        android:id="@+id/logback_item_value"
+        style="@style/logbook_detail_item_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
+

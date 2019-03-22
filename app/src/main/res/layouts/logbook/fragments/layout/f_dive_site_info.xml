@@ -1,0 +1,200 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/logbook_dive_site_content_padding"
+        >
+        <!--Dive site name *-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <shiva.joshi.common.customs.CustomTextView
+                style="@style/logbook_section_header_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dive_site"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                >
+
+                <shiva.joshi.common.customs.CustomEditText
+                    android:id="@+id/logback_dive_site_name_et"
+                    style="@style/logbook_dive_site_edit_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/logbook_edit_text_background"
+                    android:hint="@string/dive_site_hint"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Dive For  *-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/logbook_section_top_margin"
+            android:orientation="vertical"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            >
+
+            <RadioGroup
+                android:id="@+id/radio_group_guide_or_instructor"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/logbook_dive_type_radio_height"
+                android:background="@drawable/select_btn"
+                android:checkedButton="@+id/radio_btn_guide"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_btn_guide"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_button_background"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/dive_site_guide"
+                    android:textColor="@drawable/text_selector"/>
+
+                <RadioButton
+                    android:id="@+id/radio_btn_instructor"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_button_background"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/dive_site_instructor"
+                    android:textColor="@drawable/text_selector"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <!--Dive site Buddy name  *-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/logbook_section_top_margin"
+            android:orientation="vertical">
+
+            <shiva.joshi.common.customs.CustomTextView
+                style="@style/logbook_section_header_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dive_site_buddy_name"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                >
+
+                <shiva.joshi.common.customs.CustomEditText
+                    android:id="@+id/logback_dive_site_buddy_name_et"
+                    style="@style/logbook_dive_site_edit_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/logbook_edit_text_background"
+                    android:hint="@string/dive_site_buddy_name_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Dive site instructor /guide name *-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/logbook_section_top_margin"
+            android:orientation="vertical">
+
+            <shiva.joshi.common.customs.CustomTextView
+                style="@style/logbook_section_header_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dive_site_instructor_or_guide_name"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                >
+
+                <shiva.joshi.common.customs.CustomEditText
+                    android:id="@+id/logback_dive_site_guide_name_et"
+                    style="@style/logbook_dive_site_edit_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/logbook_edit_text_background"
+                    android:hint="@string/dive_site_instructor_or_guide_name_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Dive site dive center*-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/logbook_section_top_margin"
+            android:orientation="vertical">
+
+            <shiva.joshi.common.customs.CustomTextView
+                style="@style/logbook_section_header_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dive_site_dive_center"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                >
+
+                <shiva.joshi.common.customs.CustomEditText
+                    android:id="@+id/logback_dive_site_center_name_et"
+                    style="@style/logbook_dive_site_edit_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/logbook_edit_text_background"
+                    android:hint="@string/dive_site_dive_center_hint"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,73 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@drawable/home_tool_bar_background"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    >
+
+    <!--Left Cancel Icon -->
+    <ImageView
+        android:id="@+id/toolbar_logbook_left_cancel_image_id"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_cancel"
+        android:visibility="gone"
+        />
+
+    <!-- Back -->
+    <LinearLayout
+        android:id="@+id/toolbar_logbook_back_layout_id"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        >
+
+        <ImageView
+            android:id="@+id/toolbar_logbook_left_back_image_id"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back_blue"
+            android:visibility="visible"
+            />
+
+        <shiva.joshi.common.customs.CustomTextView
+            android:id="@+id/toolbar_logbook_left_back_text_id"
+            style="@style/tool_bar_logbook_left_back_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Back"
+            />
+
+    </LinearLayout>
+
+    <!--title-->
+    <shiva.joshi.common.customs.CustomTextView
+        android:id="@+id/toolbar_logbook_title_id"
+        style="@style/tool_bar_home_title_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Dive Type"
+        />
+
+    <Button
+        android:id="@+id/toolbar_logbook_right_share_image_id"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:text="Share"
+        android:background="@null"
+        android:src="@null"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>
+

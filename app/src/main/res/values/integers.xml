@@ -1,0 +1,16 @@
+<resources>
+    
+    <!-- Font Families -->
+    <integer name="BOLD">10</integer>
+    <integer name="ITALIC">11</integer>
+    <integer name="LIGHT">12</integer>
+    <integer name="MEDIUM">13</integer>
+    <integer name="REGULAR">14</integer>
+
+
+    <integer name="password_length">6</integer>
+    <integer name="seek_bar_weight_kg_max">40</integer>
+
+
+
+</resources>

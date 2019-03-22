@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="white_transparent">#00FFFFFF</color>
+    <color name="black_transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <!--Home toolbar -->
+
+    <color name="home_toolbar_bottom_border_line">#aaa</color>
+
+
+    <!--Logbook-->
+    <color name="logbook_toolbar_back_text_color">#448aff</color>
+    <color name="body_background">#eee</color>
+    <color name="logbook_section_header_color">#9a9a9a</color>
+    <color name="logbook_item_swipe_option_delete_background">#D50000</color>
+
+    <!--Show card detail -->
+    <color name="card_detail_background_color">#d7d7d5</color>
+    <color name="wheel_selected_text_color">@color/black</color>
+    <color name="wheel_normal_text_color">#a09a9a9a</color>
+</resources>

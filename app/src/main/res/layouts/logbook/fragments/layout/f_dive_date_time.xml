@@ -1,0 +1,99 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aigestudio="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/logbook_dive_type_content_padding_bottom"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="@dimen/logbook_dive_type_content_padding_top"
+    >
+    <!--Dive Date*-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        >
+
+        <shiva.joshi.common.customs.CustomTextView
+            style="@style/logbook_section_header_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/dive_date_"
+            android:textColor="@color/black"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="168dp"
+            android:orientation="horizontal"
+            >
+
+            <com.aigestudio.wheelpicker.widgets.WheelDatePicker
+                android:id="@+id/logback_dive_date_picker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+
+            </com.aigestudio.wheelpicker.widgets.WheelDatePicker>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--Dive Date*-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <shiva.joshi.common.customs.CustomTextView
+                style="@style/logbook_section_header_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/dive_start_time"
+                android:textColor="@color/black"
+                />
+
+            <include layout="@layout/view_wheel_time_picker"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <shiva.joshi.common.customs.CustomTextView
+                style="@style/logbook_section_header_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/dive_end_time"
+                android:textColor="@color/black"
+                />
+
+            <include layout="@layout/view_wheel_end_time_picker"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

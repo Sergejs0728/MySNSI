@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="parallax_image_height">250dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!--Logbook-->
+
+
+    <!--DiveType-->
+    <dimen name="logbook_dive_type_radio_height">28dp</dimen>
+    <dimen name="logbook_dive_type_content_padding_left">32dp</dimen>
+    <dimen name="logbook_dive_type_content_padding_right">32dp</dimen>
+    <dimen name="logbook_dive_type_content_padding_top">16dp</dimen>
+    <dimen name="logbook_dive_type_content_padding_bottom">16dp</dimen>
+
+    <dimen name="logbook_section_top_margin">8dp</dimen>
+    <!--Dive site info-->
+    <dimen name="logbook_dive_site_content_padding">16dp</dimen>
+    <dimen name="logbook_dive_info_seek_bar_height">32dp</dimen>
+    <dimen name="logbook_dive_info_edit_text_height">40dp</dimen>
+    <!--Log back item -->
+    <dimen name="logbook_list_item_drawable_padding">4dp</dimen>
+    <dimen name="logbook_list_item_delete_margin">8dp</dimen>
+
+
+    <!--Bottom sheet -->
+    <dimen name="bottom_sheet_items_padding_top">16dp</dimen>
+    <dimen name="bottom_sheet_items_padding_bottom">16dp</dimen>
+    <dimen name="wheel_text_size">20sp</dimen>
+    <dimen name="wheel_margin">2dp</dimen>
+
+    <!--logbook Detail -->
+    <dimen name="logbook_detail_left_padding">8dp</dimen>
+    <dimen name="logbook_detail_right_padding">8dp</dimen>
+    <dimen name="logbook_detail_top_padding">8dp</dimen>
+    <dimen name="logbook_detail_bottom_padding">8dp</dimen>
+    <dimen name="logbook_detail_image_height">176dp</dimen>
+    <dimen name="logbook_detail_location_image_height">120dp</dimen>
+    <dimen name="logbook_detail_items_margin_top">16dp</dimen>
+
+
+</resources>

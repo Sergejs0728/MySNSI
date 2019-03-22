@@ -1,0 +1,87 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.scubasnsi.mysnsi"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 4
+        versionName "2.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            res.srcDirs = [
+
+                    /*Common*/
+                    'src/main/res/layouts/common',
+                    /*Logbook*/
+                    'src/main/res/layouts/logbook/adapters',
+                    'src/main/res/layouts/logbook/fragments',
+                    'src/main/res/layouts/logbook/activities',
+                    'src/main/res/layouts/logbook',
+                    /*Login*/
+                    /*HomeActivity*/
+                    'src/main/res/layouts/home/adapters',
+
+                    'src/main/res/layouts/home/fragments',
+                    'src/main/res/layouts/home/activities',
+                    'src/main/res/layouts/home',
+                    /*Login*/
+                    'src/main/res/layouts/login/activities',
+                    'src/main/res/layouts/login',
+
+                    'src/main/res/layouts',
+                    'src/main/res'
+            ]
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+
+
+ext {
+    supportLibVersion = '25.3.1'// variable that can be referenced to keep support libs consistent
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile "com.android.support:appcompat-v7:${supportLibVersion}"
+    compile "com.android.support:design:${supportLibVersion}"
+    compile "com.android.support:cardview-v7:${supportLibVersion}"
+    compile 'com.kaopiz:kprogresshud:1.0.5'
+    /* Butter knife */
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'com.github.hotchemi:permissionsdispatcher:2.2.0'
+    apt 'com.github.hotchemi:permissionsdispatcher-processor:2.2.0'
+    /*Map*/
+    compile 'com.google.android.gms:play-services-maps:10.0.1'
+    compile 'com.google.android.gms:play-services-location:10.0.1'
+    /*Swipe */
+    compile 'com.chauthai.swipereveallayout:swipe-reveal-layout:1.4.0'
+    compile project(':commons')
+    compile project(':WheelPicker')
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+}
+

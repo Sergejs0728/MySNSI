@@ -1,0 +1,89 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/logbook_detail_left_padding"
+    android:background="@color/white"
+    android:id="@+id/scrool_view_detail"
+    >
+
+    <LinearLayout
+        android:id="@+id/llayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--Card 1 .-->
+        <ImageView
+            android:id="@+id/logbook_dive_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/logbook_detail_image_height"
+            android:scaleType="centerCrop"
+            />
+
+        <!-- Card 2.
+                   Date
+				   Start time
+				   End Time
+				   Dive Duration
+				   Dive for
+				   Dive Type
+				   Max Depth-->
+
+
+        <LinearLayout
+            android:id="@+id/logbook_detail_dive_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/logbook_detail_items_margin_top"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/logbook_detail_left_padding"
+            android:paddingRight="@dimen/logbook_detail_right_padding"
+            >
+
+        </LinearLayout>
+
+
+        <!-- Card 3.
+           Location   -->
+
+
+        <ImageView
+            android:id="@+id/logbook_location_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/logbook_detail_location_image_height"
+            android:layout_marginTop="@dimen/logbook_detail_items_margin_top"
+            android:scaleType="centerCrop"
+            />
+
+        <!--  Dive detail Card 4:
+            Diving Center - 0
+            Dive Site     - 1
+            Instructor/guide which is the second now in the Dive Site block we do not need to see (<item>Instructor/Guide</item>)
+            Buddy Name    - 2
+            Instructor/Guide Name - 3
+            Tank pressure start  -4
+            Tank pressure end   -5
+            Weight (without equipment) -6
+            Suit  -7
+            Gas Type : -8
+             there is a mistake in gas type it should not show numbers when it's air. it should show only Air
+        -->
+        <LinearLayout
+            android:id="@+id/logbook_detail_dive_site_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/logbook_detail_items_margin_top"
+            android:orientation="vertical"
+            android:padding="@dimen/logbook_detail_left_padding"
+            >
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

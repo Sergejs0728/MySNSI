@@ -1,0 +1,74 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <com.chauthai.swipereveallayout.SwipeRevealLayout
+        android:id="@+id/logbook_item_swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:dragEdge="right"
+        app:mode="same_level">
+
+        <!-- Your secondary layout here -->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <shiva.joshi.common.customs.CustomTextView
+                    android:id="@+id/logback_item_swipe_option_delete"
+                    style="@style/checklist_adapter_item_swipe_options"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/logbook_item_swipe_option_delete_background"
+                    android:text="Delete"
+                    />
+            </LinearLayout>
+
+        </FrameLayout>
+        <!-- Your secondary layout here -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:id="@+id/check_list_item_layout_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/check_list_item_background"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                >
+
+                <ImageView
+                    android:id="@+id/check_list_item_image_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_checked"/>
+
+                <shiva.joshi.common.customs.CustomTextView
+                    android:id="@+id/check_list_item_name_id"
+                    style="@style/check_list_item_text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Pump"
+                    />
+
+            </LinearLayout>
+        </FrameLayout>
+    </com.chauthai.swipereveallayout.SwipeRevealLayout>
+
+
+</LinearLayout>

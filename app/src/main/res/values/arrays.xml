@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Banners Images -->
+    <string-array name="welcome_screen_banner_images">
+        <item>@drawable/img_view_my_card</item>
+        <item>@drawable/img_my_log_book</item>
+        <item>@drawable/img_my_equipment_check_list</item>
+
+    </string-array>
+
+
+    <!-- Dive detail - Card 2.
+                   Date
+				   Start time
+				   End Time
+				   Dive Duration
+				   Dive for
+				   Dive Type
+				   Max Depth-->
+    <string-array name="dive_detail_dive_type">
+        <item>@string/dive_detail_Date</item>
+        <item>@string/dive_detail_start_time</item>
+        <item>@string/dive_detail_end_time</item>
+        <item>@string/dive_detail_dive_duration</item>
+        <item>@string/dive_detail_dive_for</item>
+        <item>@string/dive_detail_type</item>
+        <item>@string/dive_detail_max_depth</item>
+    </string-array>
+
+    <!-- Dive detail Card 4:
+                         Diving Center
+						 Dive Site
+						 Instructor/guide which is the second now in the Dive Site block we do not need to see (<item>Instructor/Guide</item>)
+						 Buddy Name
+						 Instructor/Guide Name
+						 Tank pressure start
+						 Tank pressure end
+						 Weight (without equipment)
+						 Suit
+						 Air Temperature
+						 Water Temperature
+						 Weather
+						 Visibility
+						  -->
+    <string-array name="dive_detail_dive_site_info">
+        <item>Dive Center</item>
+        <item>Dive Site</item>
+        <item>Buddy Name</item>
+        <item>Instructor/Guide Name</item>
+        <item>Tank Pressure Start</item>
+        <item>Tank Pressure End</item>
+        <item>Weight</item>
+        <item>Suit</item>
+        <item>Gas type</item>
+        <item>Air Temperature</item>
+        <item>Water Temperature</item>
+        <item>Weather</item>
+        <item>Visibility</item>
+    </string-array>
+
+
+    <!-- External directories -->
+    -->
+    <string-array name="directory_sub_folders">
+        <item>@string/directory_sub_folders_images_c_cards</item>
+        <item>@string/directory_sub_folders_images_logbook</item>
+        <item>@string/directory_sub_folders_pdf_cards</item>
+    </string-array>
+
+
+</resources>

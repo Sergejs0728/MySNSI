@@ -1,0 +1,242 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/logbook_dive_site_content_padding"
+        >
+        <!--Temp *-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--Air temperature *-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <shiva.joshi.common.customs.CustomTextView
+                    style="@style/logbook_section_header_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/weather_info_air_temp"
+                    />
+
+                <shiva.joshi.common.customs.CustomEditText
+                    android:id="@+id/logback_dive_site_weather_air_temp_et"
+                    style="@style/logbook_edit_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/logbook_dive_info_edit_text_height"
+                    android:background="@drawable/logbook_edit_text_background"
+                    android:hint="@string/weather_info_air_temp_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxWidth="160dp"
+
+                    />
+            </LinearLayout>
+
+            <!--Water temp  *-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <shiva.joshi.common.customs.CustomTextView
+                    style="@style/logbook_section_header_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/weather_info_water_temp"
+                    />
+
+                <shiva.joshi.common.customs.CustomEditText
+                    android:id="@+id/logback_dive_site_weather_water_temp_et"
+                    style="@style/logbook_edit_text_style"
+                    android:layout_height="@dimen/logbook_dive_info_edit_text_height"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/logbook_edit_text_background"
+                    android:hint="@string/weather_info_water_temp_hint"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxWidth="160dp"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--Weather  *-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/logbook_section_top_margin"
+            android:orientation="vertical">
+
+            <shiva.joshi.common.customs.CustomTextView
+                style="@style/logbook_section_header_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/weather_info_weather"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                >
+
+                <RadioGroup
+                    android:id="@+id/radio_group_weather_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/logbook_dive_type_radio_height"
+                    android:background="@drawable/select_btn"
+                    android:checkedButton="@+id/radio_group_weather_info_sunny"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_group_weather_info_sunny"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_button_background"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/weather_info_weather_sunny"
+                        android:textColor="@drawable/text_selector"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radio_group_weather_info_cloudy"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_button_background"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/weather_info_weather_cloudy"
+                        android:textColor="@drawable/text_selector"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radio_group_weather_info_rainy"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_button_background"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/weather_info_weather_rainy"
+                        android:textColor="@drawable/text_selector"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_group_weather_info_windy"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_button_background"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/weather_info_weather_windy"
+                        android:textColor="@drawable/text_selector"
+                        />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Visibility   *-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/logbook_section_top_margin"
+            android:orientation="vertical">
+
+            <shiva.joshi.common.customs.CustomTextView
+                style="@style/logbook_section_header_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/weather_info_visibility"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                >
+
+                <RadioGroup
+                    android:id="@+id/radio_group_visibility"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/logbook_dive_type_radio_height"
+                    android:background="@drawable/select_btn"
+                    android:checkedButton="@+id/radio_group_visibility_excellent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_group_visibility_excellent"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_button_background"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/weather_info_visibility_excellent"
+                        android:textColor="@drawable/text_selector"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radio_group_visibility_good"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_button_background"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/weather_info_visibility_good"
+                        android:textColor="@drawable/text_selector"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radio_group_visibility_poor"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_button_background"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/weather_info_visibility_poor"
+                        android:textColor="@drawable/text_selector"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_group_visibility_no_visibility"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_button_background"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/weather_info_visibility_no_visible"
+                        android:textColor="@drawable/text_selector"
+                        />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

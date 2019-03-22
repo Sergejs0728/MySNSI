@@ -1,0 +1,300 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/logbook_dive_site_content_padding"
+        >
+        <!--Dive info pressure *-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--Tanks pressure start *-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <shiva.joshi.common.customs.CustomTextView
+                    style="@style/logbook_section_header_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/dive_info_pressure_start"
+                    />
+
+                <shiva.joshi.common.customs.CustomEditText
+                    android:id="@+id/logback_dive_info_pressure_start_et"
+                    style="@style/logbook_edit_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/logbook_dive_info_edit_text_height"
+                    android:background="@drawable/logbook_edit_text_background"
+                    android:hint="@string/dive_info_pressure_start_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxWidth="160dp"
+
+                    />
+            </LinearLayout>
+
+            <!--Tank pressure end  *-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <shiva.joshi.common.customs.CustomTextView
+                    style="@style/logbook_section_header_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/dive_info_pressure_end"
+                    />
+
+                <shiva.joshi.common.customs.CustomEditText
+                    android:id="@+id/logback_dive_info_pressure_end_et"
+                    style="@style/logbook_edit_text_style"
+                    android:layout_height="@dimen/logbook_dive_info_edit_text_height"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/logbook_edit_text_background"
+                    android:hint="@string/dive_info_pressure_end_hint"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxWidth="160dp"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--Weight  *-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/logbook_section_top_margin"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <shiva.joshi.common.customs.CustomTextView
+                    style="@style/logbook_section_header_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/dive_info_weight"
+                    />
+
+                <shiva.joshi.common.customs.CustomTextView
+                    android:id="@+id/logback_dive_info_weight_tv"
+                    style="@style/logbook_section_header_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="5lb"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/logback_dive_info_weight_seek_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/logbook_dive_info_seek_bar_height"
+
+                />
+
+        </LinearLayout>
+
+        <!--Dive info suit *-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/logbook_section_top_margin"
+            android:orientation="vertical">
+
+            <shiva.joshi.common.customs.CustomTextView
+                style="@style/logbook_section_header_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dive_info_suit"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                >
+
+                <RadioGroup
+                    android:id="@+id/radio_group_suit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/logbook_dive_type_radio_height"
+                    android:background="@drawable/select_btn"
+                    android:checkedButton="@+id/radio_group_suit_1"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_group_suit_1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_button_background"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/dive_info_suit_1"
+                        android:textColor="@drawable/text_selector"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radio_group_suit_2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_button_background"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/dive_info_suit_2"
+                        android:textColor="@drawable/text_selector"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radio_group_suit_3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_button_background"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/dive_info_suit_3"
+                        android:textColor="@drawable/text_selector"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_group_suit_4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_button_background"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/dive_info_suit_4"
+                        android:textColor="@drawable/text_selector"
+                        />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!--Gas Type *-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/logbook_section_top_margin"
+            android:orientation="vertical">
+
+            <shiva.joshi.common.customs.CustomTextView
+                style="@style/logbook_section_header_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dive_info_gas_type"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                >
+
+                <RadioGroup
+                    android:id="@+id/radio_group_gas_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/logbook_dive_type_radio_height"
+                    android:background="@drawable/select_btn"
+                    android:checkedButton="@+id/radio_group_gas_type_air"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_group_gas_type_air"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_button_background"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/dive_info_gas_type_air"
+                        android:textColor="@drawable/text_selector"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_group_gas_type_nitrox"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_button_background"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/dive_info_gas_type_nitrox"
+                        android:textColor="@drawable/text_selector"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!-- Oxygen Nitrox  *-->
+        <LinearLayout
+            android:id="@+id/logback_dive_info_nitrox_value_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/logbook_section_top_margin"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <shiva.joshi.common.customs.CustomTextView
+                    style="@style/logbook_section_header_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/dive_info_gas_type_nitrox_oxygen"
+                    />
+
+                <shiva.joshi.common.customs.CustomTextView
+                    android:id="@+id/logback_dive_info_nitrox_oxygen_tv"
+                    style="@style/logbook_section_header_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0%"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/logback_dive_info_nitrox_oxygen_seek_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/logbook_dive_info_seek_bar_height"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

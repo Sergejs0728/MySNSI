@@ -1,0 +1,201 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <com.chauthai.swipereveallayout.SwipeRevealLayout
+        android:id="@+id/logbook_item_swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:dragEdge="right"
+        app:mode="same_level">
+
+        <!-- Your secondary layout here -->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <shiva.joshi.common.customs.CustomTextView
+                    android:id="@+id/logback_item_swipe_option_edit"
+                    style="@style/logbook_adapter_item_swipe_options"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/logbook_section_header_color"
+                    android:text="Edit"
+                    />
+
+                <shiva.joshi.common.customs.CustomTextView
+                    android:id="@+id/logback_item_swipe_option_delete"
+                    style="@style/logbook_adapter_item_swipe_options"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/logbook_item_swipe_option_delete_background"
+                    android:text="Delete"
+                    />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <!-- Your main layout here -->
+        <FrameLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <android.support.v7.widget.CardView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:id="@+id/item_root_ll"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <shiva.joshi.common.customs.CustomTextView
+                        android:id="@+id/logback_item_dive_name"
+                        style="@style/logbook_adapter_item_dive_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mix"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            >
+
+                            <shiva.joshi.common.customs.CustomTextView
+                                style="@style/logbook_adapter_item_header"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/ic_scuba_tank"
+                                android:text="@string/mix"
+                                />
+
+                            <shiva.joshi.common.customs.CustomTextView
+                                android:id="@+id/logback_item_mix"
+                                style="@style/logbook_adapter_item_values"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapSentences"
+
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:orientation="vertical"
+                            >
+
+                            <shiva.joshi.common.customs.CustomTextView
+                                style="@style/logbook_adapter_item_header"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableRight="@drawable/ic_arrow_downward"
+                                android:text="@string/max_depth"
+                                />
+
+                            <shiva.joshi.common.customs.CustomTextView
+                                android:id="@+id/logback_item_max_depth_tv"
+                                style="@style/logbook_adapter_item_values"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <shiva.joshi.common.customs.CustomTextView
+                                style="@style/logbook_adapter_item_header"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/ic_duration"
+                                android:text="@string/duration"
+                                />
+
+                            <shiva.joshi.common.customs.CustomTextView
+                                android:id="@+id/logback_item_duration_tv"
+                                style="@style/logbook_adapter_item_values"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:orientation="vertical"
+                            >
+
+                            <shiva.joshi.common.customs.CustomTextView
+                                style="@style/logbook_adapter_item_header"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableRight="@drawable/ic_calendar"
+                                android:text="Date"
+                                />
+
+                            <shiva.joshi.common.customs.CustomTextView
+                                android:id="@+id/logback_item_date_tv"
+                                style="@style/logbook_adapter_item_values"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </FrameLayout>
+
+    </com.chauthai.swipereveallayout.SwipeRevealLayout>
+
+
+</LinearLayout>
